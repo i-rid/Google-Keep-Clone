@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notesNav"
+        android:icon="@drawable/ic_outline_lightbulb_24"
+        android:title="Notes"
+        android:checkable="true"
+        android:iconTint="@color/iconColor"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/remindersNav"
+        android:icon="@drawable/ic_baseline_notifications_none_24"
+        android:title="Reminders"
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/iconColor"/>
+    <item
+        android:id="@+id/newLabelNav"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="Create new label"
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/iconColor"/>
+    <item
+        android:id="@+id/archiveNav"
+        android:icon="@drawable/ic_outline_archive_24"
+        android:title="Archive"
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/iconColor"/>
+    <item
+        android:id="@+id/trashNav"
+        android:icon="@drawable/ic_outline_delete_24"
+        android:title="Trash"
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/iconColor"/>
+    <item
+        android:id="@+id/settingsNav"
+        android:icon="@drawable/ic_outline_settings_24"
+        android:title="Settings"
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/iconColor"/>
+    <item
+        android:id="@+id/helpNav"
+        android:icon="@drawable/ic_outline_help_outline_24"
+        android:title="Help &amp; feedback"
+        android:checkable="true"
+        app:showAsAction="ifRoom"
+        android:iconTint="@color/iconColor"/>
+
+</menu>

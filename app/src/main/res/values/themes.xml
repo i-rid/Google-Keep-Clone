@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GoogleKeepCloneLite" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#b8c5dc</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >#1e1e1e</item>
+<!--        <item name="android:statusBarColor" >@android:color/transparent</item>-->
+
+        <!--system bar-->
+        <item name="android:navigationBarColor">#2d2e32</item>
+<!--        <item name="android:navigationBarColor">@android:color/transparent</item>-->
+
+        <!-- Customize your theme here. -->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--            <item name="android:windowTranslucentStatus">true</item>-->
+<!--            <item name="android:windowTranslucentNavigation">true</item>-->
+<!--        <item name="android:fitsSystemWindows">true</item>-->
+
+    </style>
+    <style name="ShapeAppearanceOverlay.Material3.NavigationView.Item." parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeTopRight">25dp</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+
+    <style name="AppTheme.FullScreenDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimaryDark">#1e1e1e</item>
+        <item name="colorAccent">#1e1e1e</item>
+        <item name="colorPrimary">#1e1e1e</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">#1e1e1e</item>
+        <item name="actionMenuTextColor">#1e1e1e</item>
+        <item name="android:navigationBarColor" >#1e1e1e</item>
+    </style>
+
+</resources>

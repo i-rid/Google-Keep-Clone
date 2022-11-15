@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="color palette"
+        android:id="@+id/palleteCreate"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_outline_palette_24"/>
+
+    <item
+        android:id="@+id/addItemCreate"
+        android:title="item add"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_outline_add_box_24" />
+
+
+</menu>

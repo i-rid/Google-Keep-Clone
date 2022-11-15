@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/app_bar_box"
+        android:icon="@drawable/ic_outline_check_box_24"
+        android:title="box"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/app_bar_brush"
+        android:icon="@drawable/ic_outline_brush_24"
+        android:title="brush"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/app_bar_mic"
+        android:icon="@drawable/ic_outline_mic_none_24"
+        android:title="mic"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/app_bar_image"
+        android:icon="@drawable/ic_outline_image_24"
+        android:title="photos"
+        app:showAsAction="always" />
+</menu>

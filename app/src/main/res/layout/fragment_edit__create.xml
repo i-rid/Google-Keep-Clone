@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1e1e1e"
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayoutCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1e1e1e">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetStartWithNavigation="0dp"
+            app:menu="@menu/appbar_create_note_menu"
+            app:navigationIcon="@drawable/ic_outline_arrow_back_24"
+            app:titleTextColor="@color/iconColor" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/bodyCreate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="65dp"
+        android:paddingBottom="10dp"
+        android:clipToPadding="false"
+        android:background="#1e1e1e">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true">
+
+            <EditText
+                android:id="@+id/etTitleCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:hint="Title"
+                android:backgroundTint="@android:color/transparent"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:textColor="@color/iconColor"
+                android:textColorHint="#929292"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/imgCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="hi"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/etTitleCreate"
+                />
+            <EditText
+                android:id="@+id/etNoteCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:hint="Note"
+                android:backgroundTint="@android:color/transparent"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:includeFontPadding="false"
+                android:inputType="textMultiLine"
+                android:textColor="@color/iconColor"
+                android:textColorHint="#929292"
+                android:textSize="17sp"
+                app:layout_constraintTop_toBottomOf="@id/imgCreate"
+                tools:layout_editor_absoluteX="25dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBarCreate"
+        app:menu="@menu/bottom_appbar_fragment_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layoutDirection="rtl"
+        app:elevation="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Edited 6:05 PM"
+            android:textColor="@color/iconColor"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/dotCreate"
+            android:src="@drawable/ic_outline_more_vert_24"/>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
